@@ -22,7 +22,7 @@ For this project we will focus on two tasks:
 
 With the computing power exponentially increasing the computer vision field has been developing exponentially. This is a key element because the computer power allows using more easily a type of neural networks very powerful on images:
 
-- CNN's (Convolutional Neural Networks). Before the CNNs were democratized, the algorithms used relied a lot on human analysis to extract features which obviously time-consuming and not reliable. If you're interested in the "old school methodology" [this article](https://towardsdatascience.com/classifying-facial-emotions-via-machine-learning-5aac111932d3) explains it.
+- CNN's (Convolutional Neural Networks). Before the CNNs were democratized, the algorithms used relied a lot on human analysis to extract features which obviously time-consuming and not reliable. If you're interested in the "old school methodology" [this article](https://www.edps.europa.eu/system/files/2021-05/21-05-26_techdispatch-facial-emotion-recognition_ref_en.pdf) explains it.
 
 - The history behind this field is fascinating! [Here](https://kapernikov.com/basic-introduction-to-computer-vision/) is a short summary of its history.
 
@@ -65,7 +65,7 @@ Your goal is to implement a program that takes as input a video stream that cont
 
 - Download and unzip the [data here](https://assets.01-edu.org/ai-branch/project3/emotions-detector.zip).
   This dataset was provided for this past [Kaggle challenge](https://www.kaggle.com/competitions/challenges-in-representation-learning-facial-expression-recognition-challenge/overview).
-  It is possible to find more information about on the challenge page. Train a CNN on the dataset `train.csv`. Here is an [example of architecture](https://www.quora.com/What-is-the-VGG-neural-network) you can implement.
+  It is possible to find more information about on the challenge page. Train a CNN on the dataset `train.csv`. Here is an [example of architecture](https://viso.ai/deep-learning/vgg-very-deep-convolutional-networks/) you can implement.
   **The CNN has to perform more than 60% on the test set**. You can use the `test_with_emotions.csv` file for this. You will see that the CNNs take a lot of time to train.
   You don't want to overfit the neural network. I strongly suggest to use early stopping, callbacks and to monitor the training using the `TensorBoard`.
 
@@ -81,7 +81,6 @@ It is also expected that you explain the iterations and how you end up choosing 
 
 - Use the video stream outputted by your computer's webcam and preprocess it to make it compatible with the CNN you trained. One of the preprocessing steps is: face detection. As you may have seen the training samples are imaged centered on a face.
   To do so, I suggest using a pre-trained model to detect faces. OpenCV for image processing tasks where we identify a face from a live webcam feed which is then processed and fed into the trained neural network for emotion detection. The preprocessing pipeline will be corrected with a functional test in `preprocessing_test`:
-
   - **Input**: Video stream of 20 sec with a face on it
   - **Output**: 20 (or 21) images cropped and centered on the face with 48 x 48
     grayscale pixels
@@ -166,7 +165,7 @@ Balance technical prowess with psychological insight: as you fine-tune your CNN 
 
 ### Resources
 
-- [What is computer vision](https://machinelearningmastery.com/what-is-computer-vision/)
+- [What is computer vision](https://www.ibm.com/think/topics/computer-vision)
 
 - [Use a pre-trained CNN](https://arxiv.org/pdf/1812.06387.pdf)
 

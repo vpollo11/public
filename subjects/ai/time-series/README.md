@@ -158,7 +158,6 @@ We will backtest a **long only** strategy on Apple Inc. Long only means that we 
      - On the 2010-01-02 I receive `0` before the market closes meaning that,, if I trust the signal, the close price of day d+1 will not increase. I should not buy the stock.
 
 3. Backtest the signal created in Question 2. Here are some assumptions made to backtest this signal:
-
    - When, at date d, the signal equals 1 we buy 1$ of stock just before the market closes and we sell the stock just before the market closes the next day.
    - When, at date d, the signal equals 0, we do not buy anything.
    - The profit is not reinvested, when invested, the amount is always 1$.
@@ -184,7 +183,7 @@ We will backtest a **long only** strategy on Apple Inc. Long only means that we 
 
 - [Resource 3](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/)
 
-- [Resource 4](https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe)
+- [Resource 4](https://medium.com/data-science/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe)
 
 - [Resource 5](https://www.investopedia.com/terms/b/backtesting.asp)
 

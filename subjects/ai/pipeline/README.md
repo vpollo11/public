@@ -323,8 +323,6 @@ Resources:
 
 - [Resource 2](https://towardsdatascience.com/guide-to-encoding-categorical-features-using-scikit-learn-for-machine-learning-5048997a5c79)
 
-- [Resource 3](https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/)
-
 ---
 
 ---
@@ -366,7 +364,7 @@ The pipeline you will implement has to contain 3 steps:
 
 #### Step 3
 
-- [Dimensionality reduction](https://towardsdatascience.com/dimensionality-reduction-for-machine-learning-80a46c2ebb7e)
+- [Dimensionality reduction](https://www.geeksforgeeks.org/machine-learning/dimensionality-reduction/)
 
 #### Step 4
 

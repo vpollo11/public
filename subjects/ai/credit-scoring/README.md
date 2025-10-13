@@ -24,21 +24,19 @@ There are 3 expected deliverables associated with the scoring model:
 
 - An exploratory data analysis notebook that describes the insights you find out in the data set.
 - The trained machine learning model with the features engineering pipeline:
-
   - Do not forget: **Coming up with features is difficult, time-consuming, requires expert knowledge. ‘Applied machine learning’ is basically feature engineering.**
   - The model is validated if the **AUC on the test set is at minimum 55%, ideally to 62% included (or in best cases higher than 62% if you can !)**.
   - The labelled test data is not publicly available. However, a Kaggle competition uses the same data. The procedure to evaluate test set submission is the same as the one used for the project 1.
   - Here are the [DataSets](https://assets.01-edu.org/ai-branch/project5/home-credit-default-risk.zip).
 
 - A report on model training and evaluation:
-
   - Include learning curves (training and validation scores vs. training set size or epochs) to demonstrate that the model is not overfitting.
   - Explain the measures taken to prevent overfitting, such as early stopping or regularization techniques.
   - Justify your choice of when to stop training based on the learning curves.
 
 #### Kaggle submission
 
-The way the Kaggle platform works is explained in the challenge overview page. If you need more details, I suggest [this resource](https://towardsdatascience.com/getting-started-with-kaggle-f9138b35ae18) that gives detailed explanations.
+The way the Kaggle platform works is explained in the challenge overview page. If you need more details, I suggest [this resource](https://www.kaggle.com/datasets/parisrohan/credit-score-classification) that gives detailed explanations.
 
 - Create a username following that structure: username*01EDU* location_MM_YYYY. Submit the description profile and push it on the Git platform the first day of the week. Do not touch this file anymore.
 
@@ -55,7 +53,7 @@ There are different level of transparency:
 - **Global**: understand important variables in a model. This answers the question: "What are the key variables to the model ? ". In that case it will tell if the revenue is more important than the age to the model for example. This allows to check that the model relies on important variables. No one wants his credit to be refused because of the weather in Lisbon !
 - **Local**: each observation gets its own set of interpretability factors. This greatly increases its transparency. We can explain why a case receives its prediction and the contributions of the predictors. Traditional variable importance algorithms only show the results across the entire population but not on each individual case. The local interpretability enables us to pinpoint and contrast the impacts of the factors.
 
-There are 2 tools you can use to analyse your model and its predictions: - Features importance (available if you use a Scikit Learn model) - [SHAP library](https://towardsdatascience.com/explain-your-model-with-the-shap-values-bc36aac4de3d)
+There are 2 tools you can use to analyse your model and its predictions: - Features importance (available if you use a Scikit Learn model) - [SHAP library](https://shap.readthedocs.io/en/latest/)
 
 Implement a program that takes as input the trained model, the customer id ... and returns:
 
@@ -121,4 +119,4 @@ Remember, creating a great credit scoring model is like baking a perfect cake - 
 
 ### Resources
 
-- [Interpreting machine learning models](https://towardsdatascience.com/interpretability-in-machine-learning-70c30694a05f)
+- [Interpreting machine learning models](https://neptune.ai/blog/ml-model-interpretation-tools)
